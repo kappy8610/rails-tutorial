@@ -30,4 +30,8 @@
 yarn-debug.log*
 .yarn-integrity
 
-vendor/
+# vendor
+/vendor
+
+#環境変数
+/.envrc

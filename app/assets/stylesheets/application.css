@@ -13,3 +13,189 @@
  *= require_tree .
  *= require_self
  */
+
+  body {
+    background-color: white;
+    font-family: "YuGothic";
+  }
+
+  .logo {
+    font-size: 3em;
+    margin: 32px;
+  }
+
+  .sub-title {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    color: #364e96;/*文字色*/
+    padding: 0.5em 0;/*上下の余白*/
+    border-top: solid 3px #364e96;/*上線*/
+    border-bottom: solid 3px #364e96;/*下線*/
+  }
+
+  main {
+    width: 70%;
+    margin: auto;
+    margin-top: 32px;
+    padding: 16px 32px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+  }
+
+  main p {
+    font-size: 28px;
+    margin: 0;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  header a:hover {
+    text-decoration: none;
+    color: inherit;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .links {
+    margin: 16px;
+  }
+
+  .main {
+    margin-top: 64px;
+  }
+
+  .form-control {
+    width: auto;
+  }
+
+  .btn-primary {
+    margin: 8px 0;
+  }
+
+  /* ユーザー一覧 */
+  .users {
+    font-size: 24px;
+  }
+
+  .users li {
+    width: 80%;
+    margin: auto;
+  }
+
+  /* <%# ユーザー情報 %> */
+  .card-text {
+    font-size:24px;
+  }
+
+  .lefts {
+    float: left;
+  }
+
+  .rights {
+    float: right;
+  }
+
+  /* <%# ユーザー編集 %> */
+  .edit {
+    margin-top: 12px;
+    font-size: 28px;
+  }
+
+  /* <%# 出席表 %> */
+  table {
+    font-size: 24px;
+  }
+
+  .sort :hover{
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+  }
+
+  /* <%# カード %> */
+
+  .card{
+    padding: 0.5em 1em;
+    margin: 1em 2%;
+    color: #5d627b;
+    background: white;
+    border-top: solid 5px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    width: 46%;
+}
+  .card p {
+    margin: 0; 
+    padding: 0;
+}
+
+  /* <%# パンくずリスト %> */
+
+  .breadcrumb {
+    margin-left:0;
+  }
+
+  .breadcrumb li{
+    display:inline;/*横に並ぶように*/
+    list-style: none;
+    font-weight: bold;/*太字*/
+  }
+
+  .breadcrumb li:after {/* >を表示*/
+    content: '>';
+    padding: 0 3px;
+    color: #555;
+  }
+
+  .breadcrumb li:last-child:after {
+    content: '';
+  }
+
+  .breadcrumb li a {
+    text-decoration: none;
+    color: #52b5ee;/*色*/
+  }
+
+  .breadcrumb li a:hover {
+    opacity: 0.6;
+  }
+
+  .users ul {
+  padding: 0;
+  position: relative;
+}
+
+  .users ul li {
+  color: black;
+  border-left: solid 8px royalblue;/*左側の線*/
+  background: whitesmoke;/*背景色*/
+  margin-bottom: 5px;/*下のバーとの余白*/
+  line-height: 1.5;
+  border-radius: 0 15px 15px 0;/*右側の角だけ丸く*/
+  padding: 0.5em;
+  list-style-type: none!important;
+  border-bottom: solid 2px white;/*下に白色線*/
+  border-top: solid 2px white;/*上に白色線*/
+}
+
+  .users ul li:hover {
+    border-bottom: solid 2px #dadada;/*下に灰色線*/
+    text-decoration: none;
+  }
+
+  .users ul li a:hover {
+    text-decoration: none;
+  }
+
+  .update {
+    margin-left: 24px;
+    float: left;
+  }
